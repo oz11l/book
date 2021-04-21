@@ -1,0 +1,625 @@
+
+@font-face{
+font-family: "JF Flat Regular";
+src: url(../fonts/JF-Flat-regular.eot);
+src: url(../fonts/JF-Flat-regular.eot#iefix) format('embedded-opentype'),
+     url('../fonts/JF-Flat-regular.svg#JF Flat Regular') format('svg'),
+     url(../fonts/JF-Flat-regular.woff) format('woff'),
+     url(../fonts/JF-Flat-regular.woff) format('truetype');
+     font-weight: bold;
+     font-style: normal;
+}
+
+body{
+    font-family: "JF Flat Regular", 'segoe UI', Verdana, Tahoma, sans-serif;
+    color: #555555;
+    font-size: 14px;
+    line-height: 1.429;
+    background-color: #FBEEE6 ;
+}
+
+.layer {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    display: none;
+} 
+
+/**الشريط العلوي**/
+nav.navbar {
+    background-color: rgba(73, 73, 73, 0.7);
+    height: 80px;
+    
+}
+
+
+.custom-navbar-brand {
+    width: 320px;
+}
+
+.navbar-brand img.logo,
+.navbar-brand .logo-title{
+    width: 24%;
+    float: right;
+    color: #000
+}
+
+.navbar-brand .logo-title {
+    margin: 5px 0;
+    font-size: 24px;
+}
+
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+nav.navbar button.navbar-toggler {
+    margin: 30px auto;
+    transition: all 1s ease; 
+}
+
+nav.navbar button.navbar-toggler span {
+   color: #000; 
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    margin-bottom: 0;
+}
+
+ul li.nav-item {
+    padding: 8px;
+}
+
+ul li.nav-item a {
+    color: #000;
+    font-size: large;
+    font-weight: bold;
+    transition: all 470ms ease;
+}
+
+ul li.nav-item a:hover {
+    background-color: rgb(39, 38, 38);
+    color: #fff;
+}
+
+.icon-after-991 {
+    display: none;
+}
+
+#socialIcons > .icon {
+    color: #000;
+    font-size: 17px;
+    margin-right: 0;
+    position: relative;
+}
+
+
+
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: absolute;
+    left: 80px;
+    top: 60px;
+    display: none;  
+}
+
+.social-icon {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 7px;
+    margin-right: 11px;
+    cursor: pointer;
+   
+}
+
+.social-twitter {
+    background-color: #55acee
+}
+
+.social-facebook {
+    background-color: #3b5999
+}
+
+.social-linkedin {
+    background-color: #0077B5
+}
+
+.social-google {
+    background-color: #dd4b39
+}
+
+.social-instagram {
+    background-color: #dd4b39
+}
+
+.social-icon i {
+    transition: 0.4s all
+}
+
+.social-icon:hover i {
+    transform: scaleX(1.1)
+}
+
+
+/***********************************************************************************************
+*******************************الصفحة الرئيسية*****************************************************************/
+
+
+header.header{
+    background-image: url(../images/baground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 60vh; 
+}
+
+header .overlay {
+ 
+    background: linear-gradient(to right, 
+    rgba(93, 105, 105, 0.8) 0%, 
+    rgba(169, 207, 78, 0.8) 100%);
+    min-height: 60vh; 
+}
+
+header .container {
+    padding-top: 160px;
+
+}
+
+.container .title,
+.container .desc {
+    width: 90%;
+    color: #ffffff;
+}
+.container .desc {
+    color: #dfdfdf;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.custom-search {
+    display: inline-flex;
+    margin-top: 20px;
+}
+.custom-search input {
+   border-bottom-left-radius: 0;
+   border-top-left-radius: 0;
+   border: 1px solid transparent;
+   border-left: none;
+}
+
+.custom-search button.btn {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-right: none;
+    padding: 6px 12px 4px 12px;
+}
+
+section.books {
+    padding: 80px 0;
+}
+
+section.books .title {
+    margin-bottom: 50px;
+}
+
+
+ a.custom-btn {
+    font-size: 18px;
+    line-height: 50px;
+    background-color: #16aeca;
+    color: #ffffff;
+    border-radius: 30px;
+    padding: 0px 2rem;
+    display: inline-block;
+    transition: all 800ms ease;
+}
+
+a.custom-btn:hover {
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+section.contacts {
+    background-color: #1d1d1d;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+section.contacts h2.title {
+    margin-bottom: 30px;
+}
+
+section.contacts .info h3 {
+    font-size: 24px;
+    line-height: 50px;
+    color: #555;
+    font-weight: bold;
+    
+}
+
+section.contacts .info ul {
+    padding: 0; 
+    display: block;
+}
+
+section.contacts .info ul li {
+    font-size: 18px;
+    line-height: 25px;
+    color: #16aeca;
+    margin-bottom: 15px; 
+}
+
+
+section.contacts .info ul li i {
+margin-left: 10px; 
+}
+
+footer .copyright{
+    background-color: #111111;
+}
+
+footer .copyright p {
+    font-size: 15px;
+    line-height: 80px;
+    color: #919191;
+    margin-bottom: 0;
+}
+
+
+/***********************************************************************************************
+******************************* صفحة الكتاب الاول*****************************************************************/
+
+.first-section {
+    background-color: #00639F;
+    padding-bottom: 25px;
+}
+
+.first-section img {
+   width: 340px;
+}
+
+
+.first-section .title {
+ color: #ffF;
+ font-size: 30px;
+ margin-bottom: 15px;
+}
+
+.first-section .desc {
+    color: #d8d8d0;
+    font-size: 18px;
+    line-height: 30px;
+} 
+
+
+.gallery {
+    padding: 70px 0;
+}
+
+.gallery .title {
+    margin-bottom: 40px;
+    font-weight: bolder;
+}
+
+.gallery .title .blue-icon  {
+    color: #2DA3E2;
+    font-size: 35px;
+}
+
+
+
+
+
+#gallery-carousel .carousel-inner {
+    width: fit-content;
+    margin: auto;
+}
+
+#gallery-carousel .carousel-inner .carousel-item {
+    width: fit-content;
+    margin: auto;
+}
+
+#gallery-carousel .carousel-inner .carousel-item img {
+    width: 70%;
+    height: 70%;
+}
+
+.custom-carousel-indicators-primary{
+    position: absolute;
+    bottom: -145px;
+    right: 0;
+    width: fit-content;
+    margin: auto;
+}
+
+.custom-carousel-indicators-primary img{
+ height: 155px;
+ width: 155px;
+ background-color: #fff;
+ border: 2px solid #DDDDDB;
+ margin-right: 2px;
+}
+
+#carousel-featured .custom-carousel-indicators-primary img.active{
+   border-color: #f8ad47;
+}
+
+
+
+
+/*************/
+
+.cart {
+    padding: 120px 0;
+}
+.cart .media img {
+    width: 200px;
+    margin-right: 180px;
+}
+
+.cart .media-body {
+    margin-top: 50px;
+    margin-right: 18px;
+}
+
+.cart .media-body h5 {
+    margin-bottom: 10px;
+}
+
+.cart .media-body a {
+    background-color: #2DA3E2;
+    transition: all 0.8s ease;
+}
+
+.cart .media-body a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/******/
+
+footer.first-book .copyright {
+    background-color: #00639F;
+}
+
+footer.first-book p{
+ color: #fff;
+}
+
+/***********************************************************************************************
+*******************************الصفحة الثانية*****************************************************************/
+
+.sec-section {
+    background-color: #7c4b2f;
+    padding-bottom: 25px;
+}
+
+.sec-section img {
+   width: 340px;
+}
+
+
+.sec-section .title {
+ color: #ffF;
+ font-size: 30px;
+ margin-bottom: 15px;
+}
+
+.sec-section .desc {
+    color: #d8d8d0;
+    font-size: 18px;
+    line-height: 30px;
+} 
+
+
+
+.sec-gallery {
+    padding: 70px 0;
+}
+
+.sec-gallery .title {
+    margin-bottom: 40px;
+    font-weight: bolder;
+}
+
+.sec-gallery .title .blue-icon  {
+    color: #80401A;
+    font-size: 35px;
+}
+
+/*************/
+
+.sec-cart {
+    padding: 120px 0;
+}
+.sec-cart .media img {
+    width: 200px;
+    margin-right: 180px;
+}
+
+.sec-cart .media-body {
+    margin-top: 50px;
+    margin-right: 18px;
+}
+
+.sec-cart .media-body h5 {
+    margin-bottom: 10px;
+}
+
+.sec-cart .media-body a {
+    background-color: #80401A;
+    transition: all 0.8s ease;
+}
+
+.sec-cart .media-body a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/******/
+
+footer.sec-book .copyright {
+    background-color: #7c4b2f;
+}
+
+footer.sec-book p{
+ color: #fff;
+}
+
+
+/*****************************************************
+**************************************************
+********************media************************
+**************************************************/
+@media (max-width:1200px) {
+    ul.navbar-nav {
+        padding-right: 0;
+    }
+}
+
+@media (max-width:991px) {
+    /**الشريط العلوي**/
+    nav.navbar button.navbar-toggler {
+        margin: 0;
+        margin-top: 15px;
+    }   
+
+        .navbar-nav {
+        text-align: right;
+        width: fit-content;
+        background-color: rgba(235, 235, 235, 0.7);
+    }
+
+    .icon-befor-991 {
+        display: none;
+    }
+
+    .icon-after-991 {
+        display: flex;
+    }
+
+}
+
+
+
+
+@media (max-width:767px) {
+        /**الصفحة الرئيسية**/
+    .books .container .col-md-6 {
+        margin-bottom: 25px;
+    }
+
+    /***الصفحة الكتاب**/
+    .cart {
+        margin-top: 120px;
+        padding: 60px 0;
+        border-top: 1px solid #f8e5da;
+    }
+    
+   .cart .media {
+       display: block;
+   }
+
+   .cart .media img {
+       margin: 15px auto;
+   }
+
+   .cart .media-body {
+       margin: 25px 0px;
+   }
+
+   /**slider**/
+   .custom-carousel-indicators-primary {
+        bottom: -88px;
+   }
+
+   .custom-carousel-indicators-primary img {
+       width: 100px;
+       height: 100px;
+   }
+
+    
+
+}
+
+@media (max-width:575px) {
+        /**الصفحة الرئيسية**/
+    .books .container .col-md-6 {
+        margin-bottom: 25px;
+    }
+
+    #map iframe {
+        width: 400px;
+    }
+
+    .custom-search input {
+        width: 70%;
+    }
+
+
+    /***الصفحة الاولى***/
+    .custom-carousel-indicators-primary {
+        right: -24px;
+   }
+
+   .custom-carousel-indicators-primary img {
+       width: 70px;
+       height: 70px;
+   }
+
+}
+
+
+@media (max-width:420px) {
+    /**الشريط العلوي**/
+    .custom-navbar-brand {
+        width: 205px;
+        margin-right: 0;
+        
+    }
+    .navbar-brand img.logo,
+    .navbar-brand .logo-title{
+        width: 30%;
+        float: right;
+        color: #000;
+        font-size: 20px;
+    }
+    nav.navbar button.navbar-toggler span {
+        font-size: 18px; 
+     }
+
+    /**الصفحة الرئيسية**/
+    #map iframe {
+        width: 300px;
+    }
+
+    /********/
+    .first-section img {
+        width: 80%;
+    }
+
+    
+}
+
+
+
