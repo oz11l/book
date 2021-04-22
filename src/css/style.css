@@ -285,206 +285,7 @@ footer .copyright p {
 }
 
 
-/***********************************************************************************************
-******************************* صفحة الكتاب الاول*****************************************************************/
 
-.first-section {
-    background-color: #00639F;
-    padding-bottom: 25px;
-}
-
-.first-section img {
-   width: 340px;
-}
-
-
-.first-section .title {
- color: #ffF;
- font-size: 30px;
- margin-bottom: 15px;
-}
-
-.first-section .desc {
-    color: #d8d8d0;
-    font-size: 18px;
-    line-height: 30px;
-} 
-
-
-.gallery {
-    padding: 70px 0;
-}
-
-.gallery .title {
-    margin-bottom: 40px;
-    font-weight: bolder;
-}
-
-.gallery .title .blue-icon  {
-    color: #2DA3E2;
-    font-size: 35px;
-}
-
-
-
-
-
-#gallery-carousel .carousel-inner {
-    width: fit-content;
-    margin: auto;
-}
-
-#gallery-carousel .carousel-inner .carousel-item {
-    width: fit-content;
-    margin: auto;
-}
-
-#gallery-carousel .carousel-inner .carousel-item img {
-    width: 70%;
-    height: 70%;
-}
-
-.custom-carousel-indicators-primary{
-    position: absolute;
-    bottom: -145px;
-    right: 0;
-    width: fit-content;
-    margin: auto;
-}
-
-.custom-carousel-indicators-primary img{
- height: 155px;
- width: 155px;
- background-color: #fff;
- border: 2px solid #DDDDDB;
- margin-right: 2px;
-}
-
-#carousel-featured .custom-carousel-indicators-primary img.active{
-   border-color: #f8ad47;
-}
-
-
-
-
-/*************/
-
-.cart {
-    padding: 120px 0;
-}
-.cart .media img {
-    width: 200px;
-    margin-right: 180px;
-}
-
-.cart .media-body {
-    margin-top: 50px;
-    margin-right: 18px;
-}
-
-.cart .media-body h5 {
-    margin-bottom: 10px;
-}
-
-.cart .media-body a {
-    background-color: #2DA3E2;
-    transition: all 0.8s ease;
-}
-
-.cart .media-body a:hover {
-    background-color: #000;
-    color: #fff;
-}
-
-/******/
-
-footer.first-book .copyright {
-    background-color: #00639F;
-}
-
-footer.first-book p{
- color: #fff;
-}
-
-/***********************************************************************************************
-*******************************الصفحة الثانية*****************************************************************/
-
-.sec-section {
-    background-color: #7c4b2f;
-    padding-bottom: 25px;
-}
-
-.sec-section img {
-   width: 340px;
-}
-
-
-.sec-section .title {
- color: #ffF;
- font-size: 30px;
- margin-bottom: 15px;
-}
-
-.sec-section .desc {
-    color: #d8d8d0;
-    font-size: 18px;
-    line-height: 30px;
-} 
-
-
-
-.sec-gallery {
-    padding: 70px 0;
-}
-
-.sec-gallery .title {
-    margin-bottom: 40px;
-    font-weight: bolder;
-}
-
-.sec-gallery .title .blue-icon  {
-    color: #80401A;
-    font-size: 35px;
-}
-
-/*************/
-
-.sec-cart {
-    padding: 120px 0;
-}
-.sec-cart .media img {
-    width: 200px;
-    margin-right: 180px;
-}
-
-.sec-cart .media-body {
-    margin-top: 50px;
-    margin-right: 18px;
-}
-
-.sec-cart .media-body h5 {
-    margin-bottom: 10px;
-}
-
-.sec-cart .media-body a {
-    background-color: #80401A;
-    transition: all 0.8s ease;
-}
-
-.sec-cart .media-body a:hover {
-    background-color: #000;
-    color: #fff;
-}
-
-/******/
-
-footer.sec-book .copyright {
-    background-color: #7c4b2f;
-}
-
-footer.sec-book p{
- color: #fff;
-}
 
 
 /*****************************************************
@@ -529,37 +330,6 @@ footer.sec-book p{
         margin-bottom: 25px;
     }
 
-    /***الصفحة الكتاب**/
-    .cart {
-        margin-top: 120px;
-        padding: 60px 0;
-        border-top: 1px solid #f8e5da;
-    }
-    
-   .cart .media {
-       display: block;
-   }
-
-   .cart .media img {
-       margin: 15px auto;
-   }
-
-   .cart .media-body {
-       margin: 25px 0px;
-   }
-
-   /**slider**/
-   .custom-carousel-indicators-primary {
-        bottom: -88px;
-   }
-
-   .custom-carousel-indicators-primary img {
-       width: 100px;
-       height: 100px;
-   }
-
-    
-
 }
 
 @media (max-width:575px) {
@@ -575,17 +345,6 @@ footer.sec-book p{
     .custom-search input {
         width: 70%;
     }
-
-
-    /***الصفحة الاولى***/
-    .custom-carousel-indicators-primary {
-        right: -24px;
-   }
-
-   .custom-carousel-indicators-primary img {
-       width: 70px;
-       height: 70px;
-   }
 
 }
 
@@ -613,12 +372,6 @@ footer.sec-book p{
         width: 300px;
     }
 
-    /********/
-    .first-section img {
-        width: 80%;
-    }
-
-    
 }
 
 
