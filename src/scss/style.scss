@@ -1,10 +1,70 @@
 
 @import './varibals';
 @import './mixin';
-@import './section';
-@import './gallarys';
-@import './carts';
 @import './gallery-carousel';
-@import './footers'
 
+
+
+/*****firstpage*******/
+.first-section {
+    @include header($first-page-backgrond-color,$title-color ,$desc-color )
+}
+
+.gallery {
+    @include gallery($first-page-buttons-color)
+}
+
+.cart {
+    @include cart($first-page-buttons-color,$black-color ,$title-color)
+
+}
+footer.first-book {
+    @include footer ($first-page-backgrond-color,$desc-color)
+}
+
+@media (max-width:420px) {
+    .first-section {
+        img {
+          width: 80%;  
+        } 
+    }
+}
+
+@media (max-width:767px) {
+    .cart {
+        @include cartMedia($desc-color)
+    }
+}
+
+
+/***********secPage*********************/
+
+.sec-section {
+    @include header($sec-page-background-color,$title-color ,$desc-color )
+}
+.sec-gallery {
+    @include gallery($sec-page-buttons-color)
+}
+.sec-cart {
+    @include cart($sec-page-buttons-color,$black-color ,$title-color)
+}
+footer.sec-book {
+    @include footer($sec-page-background-color,$desc-color )
+}
+
+@media (max-width:420px) {
+
+    .sec-section {
+        img {
+          width: 80%;  
+        } 
+    }
+}
+
+@media (max-width:767px) {
+    .sec-cart {
+        @include cartMedia($desc-color)
+    }
+  
+}
 
