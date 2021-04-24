@@ -1,34 +1,23 @@
-$golden-color:#f8ad47;
-
-.gallery {
+@mixin gallery ($buttonsColor) {
     padding: 70px 0;
-
     .title {
         margin-bottom: 40px;
         font-weight: bolder;
 
         .blue-icon  {
-            color: $first-page-buttons-color;
+            color: $buttonsColor;
             font-size: 35px;
         }
     }
 }
 
-
+.gallery {
+    @include gallery($first-page-buttons-color)
+}
 
 
 .sec-gallery {
-    padding: 70px 0;
-
-    .title {
-        margin-bottom: 40px;
-        font-weight: bolder;
-    }
-
-    .blue-icon  {
-        color: $sec-page-buttons-color;
-        font-size: 35px;
-    }
+    @include gallery($sec-page-buttons-color)
 }
 
 

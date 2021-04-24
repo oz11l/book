@@ -1,0 +1,83 @@
+
+
+@mixin header ($backgroundColor,$titleColor,$descColor) {
+    background-color: $backgroundColor;
+    padding-bottom: 25px;
+
+    img {
+        width: 340px;
+    }
+
+    .title {
+        color: $title-color;
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    .desc {
+        color: $desc-color;
+        font-size: 18px;
+        line-height: 30px;
+    } 
+    
+}
+
+/****gallery****/
+
+@mixin gallery ($buttonsColor) {
+    padding: 70px 0;
+    .title {
+        margin-bottom: 40px;
+        font-weight: bolder;
+
+        .blue-icon  {
+            color: $buttonsColor;
+            font-size: 35px;
+        }
+    }
+}
+/******carts******/
+
+@mixin cart ($buttonBackgroundColor,$buttonBackgroundColorHover,$buttonColorHover) {
+    padding: 120px 0;
+
+    .media  {
+
+        img {
+            width: 200px;
+            margin-right: 180px;
+        }
+
+        .media-body {
+            margin-top: 50px;
+            margin-right: 18px;
+    
+            h5 {
+                margin-bottom: 10px;
+            }
+    
+            a {
+                background-color: $buttonBackgroundColor;
+                transition: all 0.8s ease;
+    
+                &:hover {
+                    background-color: $buttonBackgroundColorHover;
+                    color: $buttonColorHover;
+                }
+            }
+        }
+    }
+}
+
+/******footers******/
+
+@mixin footer ($backgrounColor,$textColor) {
+
+    .copyright {
+        background-color: $backgrounColor;  
+      }
+  
+      p{
+          color: $textColor;
+      }
+}

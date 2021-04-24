@@ -1,66 +1,11 @@
+
 .cart {
-    padding: 120px 0;
-
-    .media  {
-
-        img {
-            width: 200px;
-            margin-right: 180px;
-        }
-
-        .media-body {
-            margin-top: 50px;
-            margin-right: 18px;
-    
-            h5 {
-                margin-bottom: 10px;
-            }
-    
-            a {
-                background-color: $first-page-buttons-color;
-                transition: all 0.8s ease;
-    
-                &:hover {
-                    background-color: $black-color;
-                    color: $title-color;
-                }
-            }
-        }
-    }
-
+    @include cart($first-page-buttons-color,$black-color ,$title-color)
 
 }
 
 .sec-cart {
-    padding: 120px 0;
-
-    .media {
-
-        img {
-            width: 200px;
-            margin-right: 180px;
-        }
-
-        .media-body {
-            margin-top: 50px;
-            margin-right: 18px;
-
-            h5 {
-                margin-bottom: 10px;
-            }
-
-            a {
-                background-color: $sec-page-buttons-color;
-                transition: all 0.8s ease;
-
-                &:hover {
-                    background-color: $black-color;
-                    color: $title-color;
-                }
-            }
-        }
-
-    }
+    @include cart($sec-page-buttons-color,$black-color ,$title-color)
 }
 
 

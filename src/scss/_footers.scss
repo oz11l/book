@@ -1,19 +1,11 @@
 
 
-footer.first-book .copyright {
-    background-color: $first-page-backgrond-color;
-}
 
-footer.first-book p{
- color: $desc-color;
+footer.first-book {
+    @include footer ($first-page-backgrond-color,$desc-color)
 }
 
 
-
-footer.sec-book .copyright {
-    background-color: $sec-page-background-color;
-}
-
-footer.sec-book p{
- color: $desc-color;
+footer.sec-book {
+    @include footer($sec-page-background-color,$desc-color )
 }
